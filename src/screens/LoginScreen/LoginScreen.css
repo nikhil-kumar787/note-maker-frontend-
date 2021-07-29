@@ -1,0 +1,15 @@
+.mainLogin {
+  min-height: 93vh;
+  display: flex;
+  align-items: center;
+  background-image: url("../../bgLogin.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.loginContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 50%;
+    width:150%;
+  }
