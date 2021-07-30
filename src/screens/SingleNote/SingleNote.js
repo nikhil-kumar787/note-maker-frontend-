@@ -31,7 +31,7 @@ function SingleNote({ match, history }) {
 
   useEffect(() => {
     const fetching = async () => {
-      const { data } = await axios.get(`/api/notes/${match.params.id}`);
+      const { data } = await axios.get(`https://note-maker-app.herokuapp.com/api/notes/${match.params.id}`);
 
       setTitle(data.title);
       setContent(data.content);
