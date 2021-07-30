@@ -67,7 +67,7 @@ const RegisterScreen = ({history}) => {
     } else dispatch(register(name, email, password, pic));
   };
     return (
-      <div className="main">
+      <div className="mainRegister">
         <MainScreen title="Register">
             <div className="loginContainer">
             {error && <ErrorMessage variant="danger">{error}</ErrorMessage>}
@@ -95,7 +95,7 @@ const RegisterScreen = ({history}) => {
                     <Form.Group controlId='formBasicPassword'>
                         <Form.Label>Password</Form.Label>
                         <Form.Control 
-                        type="passowrd"
+                        type="password"
                         value={password}
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
@@ -104,7 +104,7 @@ const RegisterScreen = ({history}) => {
                     <Form.Group controlId='confirmPassword'>
                         <Form.Label>Confirm Password</Form.Label>
                         <Form.Control 
-                        type="passowrd"
+                        type="password"
                         value={confirmpassword}
               placeholder="Confirm Password"
               onChange={(e) => setConfirmPassword(e.target.value)}
